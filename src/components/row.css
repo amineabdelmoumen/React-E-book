@@ -30,3 +30,7 @@ input:focus {
 .form-control::-webkit-input-focus {
   color: rgb(13, 231, 42);
 }
+body {
+  background-color: rgb(106, 115, 167);
+  color: rgb(19, 18, 18);
+}
