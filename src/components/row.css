@@ -1,0 +1,32 @@
+.row__book {
+  width: 10%;
+  object-fit: contain;
+  margin: 0.5em;
+  border: 1px solid gray;
+  padding: 0.5em;
+  max-height: 100px;
+}
+.books {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+.container {
+  margin-top: 15px;
+  height: 70%;
+}
+button {
+  margin-left: 340px;
+  margin-top: 20px;
+}
+input:focus {
+  background-color: lightblue;
+  border: 3px solid brown;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: rgb(13, 231, 195);
+}
+.form-control::-webkit-input-focus {
+  color: rgb(13, 231, 42);
+}

@@ -1,0 +1,10 @@
+.book {
+  width: 300px;
+  height: 100px;
+}
+.card-img-top {
+  width: 70px;
+}
+.card:hover .card-image img {
+  width: 50%;
+}
