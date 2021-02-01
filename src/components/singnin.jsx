@@ -8,7 +8,7 @@ class SignIn extends Component {
     password: "",
     password1: "",
   };
-  render() {
+  get render() {
     return (
       <div>
         <NavBar />
