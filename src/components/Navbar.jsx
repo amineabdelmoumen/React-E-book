@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import { Link, BrowserRouter as Router } from "react-router-dom";
 class NavBar extends Component {
   state = {};
   render() {
     return (
       <div>
-        <nav className="navbar  navbar-expand-lg navbar-light bg-info">
+        <nav className="navbar  navbar-expand-lg navbar-light bg-light">
           <a className="navbar-brand" href="#">
             Navbar
           </a>
@@ -22,9 +23,9 @@ class NavBar extends Component {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <a className="nav-link" href="#">
+                <Link to="/" className="nav-link">
                   Books <span className="sr-only">(current)</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
@@ -36,10 +37,11 @@ class NavBar extends Component {
                   Login
                 </a>
               </li>
+
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link to="/signin" className="nav-link">
                   Signin
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

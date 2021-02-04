@@ -6,10 +6,10 @@ import reportWebVitals from "./reportWebVitals";
 import Fetch from "./components/fetch.jsx";
 import "bootstrap/dist/css/bootstrap.css";
 import SignIn from "./components/singnin.jsx";
-
+import Home from "./components/Home.jsx";
 ReactDOM.render(
   <React.StrictMode>
-    <SignIn />
+    <Home />
   </React.StrictMode>,
   document.getElementById("root")
 );

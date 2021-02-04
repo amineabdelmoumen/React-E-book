@@ -23,7 +23,6 @@ class Fetch extends Component {
   render() {
     return (
       <div>
-        <NavBar />
         <button
           type="button"
           onClick={this.fetch}

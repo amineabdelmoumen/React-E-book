@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import NavBar from "./Navbar";
 import "./row.css";
+import { Link } from "react-router-dom";
 import axios from "axios";
+
 class SignIn extends Component {
   state = {
     username: "",
@@ -43,69 +45,50 @@ class SignIn extends Component {
   };
   render() {
     return (
-      <div className="body">
-        <NavBar />
-        <div className="container mh-70 col-md-6 offset-md-3 col-xs-12">
-          <div className="card card-default">
-            <div className="card-header">
-              <h2 className="text-info">Create a account</h2>
-            </div>
-            <div className="card-body">
-              <form>
-                <div className="form-group">
-                  <label className="control-label">Username</label>
-                  <input
-                    onChange={(e) => this.getUsername(e)}
-                    className="form-control"
-                    placeholder="type a Username"
-                    name="username"
-                  />
-                </div>
-                <div className="form-group">
-                  <label className="control-label">Email:</label>
-                  <input
-                    onChange={(e) => this.getEmail(e)}
-                    className="form-control"
-                    placeholder="You Email.."
-                    name="email"
-                  />
-                </div>
-                <div className="form-group">
-                  <label className="control-label">password:</label>
-                  <input
-                    onChange={(e) => this.getPassword1(e)}
-                    className="form-control"
-                    type="password"
-                    placeholder="type a Strong Password"
-                    name="password"
-                  />
-                </div>
-                <div className="form-group">
-                  <label className="control-label">
-                    password Confirmation:
-                  </label>
-                  <input
-                    onChange={(e) => this.getPassword2(e)}
-                    className="form-control"
-                    type="password"
-                    placeholder="Confirm your password"
-                    name="password2"
-                  />
-                </div>
-                <div>
-                  <button
-                    type="submit"
-                    onClick={(e) => this.Submit(e)}
-                    className="btn btn-outline-success m-l-2"
-                  >
-                    Register
-                  </button>
-                </div>
-              </form>
-            </div>
+      <div className="bod">
+        <div className="form">
+          <h3 className="title"> Sign in </h3>
+          <form method="post">
+            <input
+              className="input"
+              placeholder="Username.."
+              onChange={(e) => this.getUsername(e)}
+              required
+            ></input>
 
-            <div className="card-footer"></div>
-          </div>
+            <br />
+            <input
+              className="input"
+              onChange={(e) => this.getEmail(e)}
+              placeholder="Email.."
+              type="email"
+              required
+            />
+            <br />
+            <input
+              className="input"
+              onChange={(e) => this.getPassword2(e)}
+              placeholder="password1.."
+              type="password"
+              required
+            />
+            <br />
+            <input
+              className="input"
+              onChange={(e) => this.getPassword2(e)}
+              placeholder="Password Confirmation.."
+              type="password"
+              required
+            />
+            <br />
+            <button
+              type="submit"
+              onClick={(e) => this.Submit(e)}
+              className="btn btn-primary"
+            >
+              Register
+            </button>
+          </form>
         </div>
       </div>
     );
